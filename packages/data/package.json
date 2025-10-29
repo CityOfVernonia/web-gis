@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "City of Vernonia geospatial data.",
-  "homepage": "https://github.com/CityOfVernonia/web-gis/packages/README.md",
+  "homepage": "https://github.com/CityOfVernonia/web-gis/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CityOfVernonia/web-gis.git",
