@@ -1,0 +1,13 @@
+{
+  "name": "web-gis",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^9.0.0"
+  }
+}
