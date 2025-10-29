@@ -1,0 +1,24 @@
+@use "host";
+
+@mixin slotted($selector, $tag, $scope: "") {
+  #{$scope} slot[name="#{$selector}"]::slotted(#{$tag}),
+  #{$scope} #{$tag}::slotted([slot="#{$selector}"]) {
+    @content;
+  }
+}
+
+@mixin base-component() {
+  /* stylelint-disable selector-attribute-name-disallowed-list -- base component mixin needs to use [hidden] */
+  :host([hidden]) {
+    .hidden {
+      display: none;
+    }
+  }
+
+  [hidden] {
+    .hidden {
+      display: none;
+    }
+  }
+  /* stylelint-enable selector-attribute-name-disallowed-list */
+}

@@ -1,0 +1,33 @@
+/* all pages */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--calcite-color-background);
+}
+
+header {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--calcite-color-brand);
+  color: var(--calcite-color-text-inverse);
+  font-size: var(--calcite-font-size-1);
+  font-weight: var(--calcite-font-weight-medium);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+/* home page */
+.home-notice {
+  width: 100%;
+}
+
+/* component page */
+.description {
+  padding: 0.5rem;
+  background-color: var(--calcite-color-foreground-1);
+}

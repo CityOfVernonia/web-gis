@@ -1,0 +1,32 @@
+/**
+ * CSS Custom Properties
+ *
+ * These properties can be overridden using the component's tag as selector.
+ *
+ * @prop --cov-hello-heading-color: Specifies the component's heading color.
+ * @prop --cov-hello-tag-line-color: Specifies the component's tag line color color.
+ */
+
+@use "../../styles/includes";
+
+:host {
+  // base component styles
+  @extend %component-host;
+
+  // component styles
+  padding: 0.75rem;
+  border: 1px solid var(--calcite-color-border-1);
+
+  // slotted styles
+  @include includes.slotted("tag-line", "*") {
+    padding-bottom: 0.25rem;
+    color: var(--cov-hello-tag-line-color, --calcite-color-text-2);
+  }
+}
+
+.heading {
+  font-size: var(--calcite-font-size-2);
+  color: var(--cov-hello-heading-color, --calcite-color-text-1);
+}
+
+@include includes.base-component();

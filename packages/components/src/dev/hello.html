@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello | City of Vernonia Components</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <script type="module" src="./hello.ts"></script>
+    <style>
+      .custom {
+        --cov-hello-heading-color: var(--calcite-color-status-danger);
+        --cov-hello-tag-line-color: var(--calcite-color-status-success);
+      }
+      .global {
+        --cov-hello-heading-color: var(--cov-color-spencer);
+      }
+    </style>
+  </head>
+  <body>
+    <header>Hello - City of Vernonia Components</header>
+    <section>
+      <div class="description">Basic</div>
+      <cov-hello></cov-hello>
+
+      <div class="description">Name property set</div>
+      <cov-hello name="Ben"></cov-hello>
+
+      <div class="description">Slotted content</div>
+      <cov-hello>
+        <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
+      </cov-hello>
+
+      <div class="description">Custom CSS properties</div>
+      <cov-hello class="custom">
+        <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
+      </cov-hello>
+
+      <div class="description">Dark mode</div>
+      <cov-hello class="calcite-mode-dark"></cov-hello>
+
+      <div class="description">Global CSS</div>
+      <cov-hello class="global"></cov-hello>
+    </section>
+  </body>
+</html>

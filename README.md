@@ -2,7 +2,9 @@
 
 A monorepo containing packages for City of Vernonia web-based geographic information to be a thing.
 
-[data](./packages/data/README.md)
+[components](./packages/components)
+
+[data](./packages/data)
 
 ---
 

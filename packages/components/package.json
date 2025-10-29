@@ -1,0 +1,57 @@
+{
+  "name": "@vernonia/components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "City of Vernonia web components.",
+  "homepage": "https://github.com/CityOfVernonia/web-gis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CityOfVernonia/web-gis.git",
+    "directory": "packages/components"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build --mode production",
+    "dev": "vite --mode development",
+    "lint": "eslint --fix",
+    "test": "npm run lint && vitest run"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.34.5",
+    "@arcgis/lumina": "^4.34.6",
+    "@arcgis/toolkit": "^4.34.6",
+    "@esri/calcite-components": "^3.3.3"
+  },
+  "devDependencies": {
+    "@arcgis/eslint-config": "^4.34.6",
+    "@arcgis/lumina-compiler": "^4.34.6",
+    "@esri/eslint-plugin-calcite-components": "^2.0.3",
+    "@vitest/browser": "3.2.4",
+    "@vitest/eslint-plugin": "^1.3.26",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "fs-extra": "^11.3.2",
+    "globals": "^16.4.0",
+    "playwright": "1.56.1",
+    "prettier": "^3.6.2",
+    "sass-embedded": "^1.93.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.46.2",
+    "typescript-strict-plugin": "^2.4.4",
+    "vite": "^7.1.12",
+    "vitest": "3.2.4"
+  },
+  "css.customData": [
+    "dist/docs/vscode.css-custom-data.json"
+  ],
+  "customElements": "dist/docs/api.json",
+  "html.customData": [
+    "dist/docs/vscode.html-custom-data.json"
+  ],
+  "web-types": "dist/docs/web-types.json",
+  "exports": {
+    "./main.css": "./dist/cdn/main.css"
+  }
+}
