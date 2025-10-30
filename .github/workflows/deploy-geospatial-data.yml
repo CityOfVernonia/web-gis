@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - packages/geospatial-data
 
 jobs:
   build-and-deploy:
@@ -12,13 +14,10 @@ jobs:
         working-directory: packages/geospatial-data
     steps:
       - uses: actions/checkout@v4
-      # - name: Install dependencies
-      #   run: npm install
-      # - name: Build
-      #   run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           enable_jekyll: true
+          disable_nojekyll: true
           publish_dir: ./packages/geospatial-data
