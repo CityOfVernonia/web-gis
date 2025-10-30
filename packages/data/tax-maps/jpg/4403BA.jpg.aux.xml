@@ -1,0 +1,55 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="COMPRESSION">JPEG</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+  </Metadata>
+  <Metadata domain="xml:ESRI" format="xml">
+    <GeodataXform xsi:type="typens:PolynomialXform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:typens="http://www.esri.com/schemas/ArcGIS/3.2.0">
+      <PolynomialOrder>1</PolynomialOrder>
+      <SpatialReference xsi:type="typens:ProjectedCoordinateSystem">
+        <WKT>PROJCS["NAD_1983_2011_Oregon_Statewide_Lambert_Ft_Intl",GEOGCS["GCS_NAD_1983_2011",DATUM["D_NAD_1983_2011",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Lambert_Conformal_Conic"],PARAMETER["False_Easting",1312335.958005249],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-120.5],PARAMETER["Standard_Parallel_1",43.0],PARAMETER["Standard_Parallel_2",45.5],PARAMETER["Latitude_Of_Origin",41.75],UNIT["Foot",0.3048],AUTHORITY["EPSG",6557]]</WKT>
+        <XOrigin>-118489100</XOrigin>
+        <YOrigin>-97381100</YOrigin>
+        <XYScale>37592196.316242374</XYScale>
+        <ZOrigin>-100000</ZOrigin>
+        <ZScale>10000</ZScale>
+        <MOrigin>-100000</MOrigin>
+        <MScale>10000</MScale>
+        <XYTolerance>0.0032808398950131233</XYTolerance>
+        <ZTolerance>0.001</ZTolerance>
+        <MTolerance>0.001</MTolerance>
+        <HighPrecision>true</HighPrecision>
+        <WKID>102970</WKID>
+        <LatestWKID>6557</LatestWKID>
+      </SpatialReference>
+      <SourceGCPs xsi:type="typens:ArrayOfDouble">
+        <Double>8559.4953778958879</Double>
+        <Double>-1295.4908786993474</Double>
+        <Double>3863.3194763478823</Double>
+        <Double>-9792.7326032686979</Double>
+        <Double>8079.6870512184178</Double>
+        <Double>-9743.6536340918392</Double>
+        <Double>5409.2724412386306</Double>
+        <Double>-1167.3058522772044</Double>
+      </SourceGCPs>
+      <TargetGCPs xsi:type="typens:ArrayOfDouble">
+        <Double>632801.74117425887</Double>
+        <Double>1511744.7473896814</Double>
+        <Double>632019.72215885064</Double>
+        <Double>1510327.7185909129</Double>
+        <Double>632722.61742189922</Double>
+        <Double>1510336.1814918108</Double>
+        <Double>632276.50783088338</Double>
+        <Double>1511765.8412486275</Double>
+      </TargetGCPs>
+      <Name />
+    </GeodataXform>
+  </Metadata>
+  <GCPList Projection="PROJCS[&quot;NAD83(2011) / Oregon GIC Lambert (ft)&quot;,GEOGCS[&quot;NAD83(2011)&quot;,DATUM[&quot;NAD83_National_Spatial_Reference_System_2011&quot;,SPHEROID[&quot;GRS 1980&quot;,6378137,298.257222101,AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;1116&quot;]],PRIMEM[&quot;Greenwich&quot;,0],UNIT[&quot;Degree&quot;,0.0174532925199433]],PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;],PARAMETER[&quot;latitude_of_origin&quot;,41.75],PARAMETER[&quot;central_meridian&quot;,-120.5],PARAMETER[&quot;standard_parallel_1&quot;,43],PARAMETER[&quot;standard_parallel_2&quot;,45.5],PARAMETER[&quot;false_easting&quot;,1312335.95800525],PARAMETER[&quot;false_northing&quot;,0],UNIT[&quot;foot&quot;,0.3048,AUTHORITY[&quot;EPSG&quot;,&quot;9002&quot;]],AXIS[&quot;Easting&quot;,EAST],AXIS[&quot;Northing&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;6557&quot;]]" dataAxisToSRSAxisMapping="1,2">
+    <GCP Id="" Pixel="6545.7461" Line="1517.6526" X="6.328017411743E+05" Y="1.511744747390E+06" />
+    <GCP Id="" Pixel="1852.0108" Line="10015.5307" X="6.320197221589E+05" Y="1.510327718591E+06" />
+    <GCP Id="" Pixel="6067.4637" Line="9967.4484" X="6.327226174219E+05" Y="1.510336181492E+06" />
+    <GCP Id="" Pixel="3396.0822" Line="1389.1102" X="6.322765078309E+05" Y="1.511765841249E+06" />
+  </GCPList>
+</PAMDataset>

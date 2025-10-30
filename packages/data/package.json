@@ -2,6 +2,7 @@
   "name": "@vernonia/data",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "description": "City of Vernonia geospatial data.",
   "homepage": "https://github.com/CityOfVernonia/web-gis/",
   "repository": {
@@ -9,5 +10,15 @@
     "url": "git+https://github.com/CityOfVernonia/web-gis.git",
     "directory": "packages/data"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "tax-maps": "node ./scripts/tax-maps.js"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "command-exists": "^1.2.9",
+    "download": "^8.0.0",
+    "fs-extra": "^11.3.2",
+    "luxon": "^3.7.2"
+  }
 }

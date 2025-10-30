@@ -1,0 +1,11 @@
+exclude:
+  - scripts
+  - Gemfile
+  - node_modules
+  - package.json
+  - package-lock.json
+  - prettier.config.js
+  - .gitignore
+
+plugins:
+  - jemoji
