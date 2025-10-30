@@ -6,11 +6,11 @@ A monorepo containing packages for City of Vernonia web-based geographic informa
 
 City of Vernonia web components.
 
-## [Core](./packages/core)
+### [Core](./packages/core)
 
 City of Vernonia friends for the ArcGIS Maps SDK for JavaScript.
 
-[Geospatial Data](./packages/geospatial-data)
+### [Geospatial Data](./packages/geospatial-data)
 
 City of Vernonia geospatial data.
 
