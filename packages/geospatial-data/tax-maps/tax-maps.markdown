@@ -1,6 +1,8 @@
-# Tax Maps
-
-Columbia County tax map boundaries, tax map PDFs, and georeferenced JPEGs within and adjacent to Vernonia City Limits.
+---
+title: Tax Maps
+description: Columbia County tax map boundaries, tax map PDFs, and georeferenced JPEGs within and adjacent to Vernonia City Limits.
+permalink: /tax-maps/
+---
 
 ### Tax Map Boundaries
 
@@ -82,11 +84,3 @@ npm run tax-maps
 **Use in ArcGIS Pro**
 
 Add `jpg` directory to a Pro project and add images to a map. Update georeference for any updated JPEGs.
-
----
-
-The City of Vernonia is an Equal Opportunity Employer and Provider
-
-Copyright © 2025 City of Vernonia, Oregon
-
-Made with :heart: and :coffee: in Vernonia, Oregon

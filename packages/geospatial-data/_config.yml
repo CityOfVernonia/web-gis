@@ -1,4 +1,17 @@
+title: City of Vernonia Geospatial Data
+
+description: City of Vernonia geospatial data.
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
 exclude:
+  - README.md
   - scripts
   - Gemfile
   - node_modules
@@ -6,6 +19,3 @@ exclude:
   - package-lock.json
   - prettier.config.js
   - .gitignore
-
-plugins:
-  - jemoji
