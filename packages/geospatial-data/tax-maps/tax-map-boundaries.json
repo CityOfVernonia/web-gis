@@ -8,14 +8,6 @@
     {
       "name": "taxmap",
       "type": "string"
-    },
-    {
-      "name": "county_url",
-      "type": "string"
-    },
-    {
-      "name": "city_url",
-      "type": "string"
     }
   ],
   "labelingInfo": [
@@ -46,5 +38,5 @@
     "type": "simple"
   },
   "title": "Tax Map Boundaries",
-  "url": "https://cityofvernonia.github.io/geospatial-data/tax-map-boundaries/tax-map-boundaries.geojson"
+  "url": "https://geospatial-data.vernonia-or.gov/tax-maps/tax-map-boundaries.geojson"
 }

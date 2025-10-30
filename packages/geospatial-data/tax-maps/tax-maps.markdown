@@ -10,7 +10,7 @@ permalink: /tax-maps/
 
 **ArcGIS Maps SDK for JavaScript GeoJSONLayer JSON:** [tax-map-boundaries.json](tax-map-boundaries.json)
 
-**Updated:** 2023.10.02
+**Updated:** 2025.10.30
 
 **Copyright:** Columbia County, Oregon and City of Vernonia, Oregon
 
@@ -20,9 +20,7 @@ permalink: /tax-maps/
 {
   "properties": {
     "name": "4N 4W 3",
-    "taxmap": "4403",
-    "county_url": "https://gis.columbiacountymaps.com/TaxMaps/4403.pdf",
-    "city_url": "https://cityofvernonia.github.io/geospatial-data/tax-maps/files/pdf/4403.pdf"
+    "taxmap": "4403"
   }
 }
 ```
