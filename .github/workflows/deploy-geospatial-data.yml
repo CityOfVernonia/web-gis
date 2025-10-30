@@ -1,0 +1,23 @@
+name: Deploy Geospatial Data
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/geospatial-data
+    steps:
+      # - uses: actions/checkout@v4
+      # - name: Install dependencies
+      #   run: npm install
+      # - name: Build
+      #   run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: packages/geospatial-data
