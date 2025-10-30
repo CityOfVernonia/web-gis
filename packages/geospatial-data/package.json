@@ -1,5 +1,5 @@
 {
-  "name": "@vernonia/data",
+  "name": "geospatial-data",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CityOfVernonia/web-gis.git",
-    "directory": "packages/data"
+    "directory": "packages/geospatial-data"
   },
   "license": "MIT",
   "scripts": {

@@ -4,7 +4,7 @@ A monorepo containing packages for City of Vernonia web-based geographic informa
 
 [components](./packages/components)
 
-[data](./packages/data)
+[geospatial-data](./packages/geospatial-data)
 
 ---
 
