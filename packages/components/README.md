@@ -1,4 +1,4 @@
-# components
+# Components
 
 City of Vernonia web components.
 
