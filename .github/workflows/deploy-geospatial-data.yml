@@ -11,7 +11,7 @@ jobs:
       run:
         working-directory: packages/geospatial-data
     steps:
-      # - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       # - name: Install dependencies
       #   run: npm install
       # - name: Build
@@ -20,4 +20,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # publish_dir: packages/geospatial-data
+          publish_dir: ./
