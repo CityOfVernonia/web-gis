@@ -90,7 +90,7 @@ export class Hello extends LitElement {
     return (
       <div>
         <div class={CSS.heading}>Hello {this.name}!</div>
-        <slot class={CSS.tagLine} name={SLOTS.tagLine} />
+        <slot name={SLOTS.tagLine} />
         <calcite-button onClick={this.buttonClick}>
           I've been clicked {this.count} time{this.count === 1 ? '' : 's'}
         </calcite-button>
