@@ -9,6 +9,6 @@
       }
     ],
   },
-  "include": ["src"],
+  "include": ["src", "**/*.config.js", "**/*.config.ts"],
   "exclude": ["src/tests/**/*"]
 }

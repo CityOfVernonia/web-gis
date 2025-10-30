@@ -26,6 +26,13 @@ export default [
       '@esri/calcite-components': calcitePlugin,
       lumina: luminaPlugin,
     },
+
+    languageOptions: {
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+        project: true,
+      },
+    },
   },
 
   /**

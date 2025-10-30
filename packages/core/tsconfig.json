@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "paths": {
+      "tslib": ["./node_modules/tslib/tslib.d.ts"]
+    },
+    "experimentalDecorators": true,
+    "target": "ES6",
+    "module": "ES2022",
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "types": ["@arcgis/core/interfaces.d.ts"]
+  },
+  "include": ["src", "**/*.config.js", "**/*.config.ts"]
+}
