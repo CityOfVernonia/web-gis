@@ -10,6 +10,9 @@ defaults:
     values:
       layout: default
 
+include:
+  - _headers
+
 exclude:
   - README.md
   - scripts
