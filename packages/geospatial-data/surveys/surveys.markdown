@@ -2,6 +2,7 @@
 title: Surveys
 description: Columbia County surveys, plats and other recorded survey documents within the Vernonia spatial extent.
 permalink: /surveys/
+preview: surveys.json
 ---
 
 ### Surveys

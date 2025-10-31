@@ -2,6 +2,7 @@
 title: Tax Maps
 description: Columbia County tax map boundaries, tax map PDFs, and georeferenced JPEGs within and adjacent to Vernonia City Limits.
 permalink: /tax-maps/
+preview: tax-map-boundaries.json
 ---
 
 ### Tax Map Boundaries

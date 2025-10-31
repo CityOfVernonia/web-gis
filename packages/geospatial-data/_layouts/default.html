@@ -1523,10 +1523,64 @@
       {% endif %}
       <!--  -->
 
+      <!-- preview -->
+      {% if page.preview %}
+      <style>
+        @import url('https://js.arcgis.com/4.34/@arcgis/core/assets/esri/themes/light/main.css');
+        #map {
+          width: 100%;
+          height: 500px;
+        }
+      </style>
+      <div id="map"></div>
+      <script type="module">
+        import MapView from 'https://js.arcgis.com/4.34/@arcgis/core/views/MapView.js';
+        import Map from 'https://js.arcgis.com/4.34/@arcgis/core/Map.js';
+        import GeoJSONLayer from 'https://js.arcgis.com/4.34/@arcgis/core/layers/GeoJSONLayer.js';
+
+        const map = new Map({
+          basemap: 'gray-vector',
+        });
+
+        new MapView({
+          container: 'map',
+          extent: {
+            spatialReference: {
+              latestWkid: 3857,
+              wkid: 102100,
+            },
+            xmin: -13715274.4729,
+            ymin: 5756619.730999999,
+            xmax: -13710046.811,
+            ymax: 5759781.4201000035,
+          },
+          map,
+        });
+
+        const url = location.href + '{{page.preview | escape}}';
+
+        const addGeoJSONLayer = async (url) => {
+          const properties = await (await fetch(url, { cache: 'reload' })).json();
+          
+          properties.customParameters = {
+            d: new Date().getTime(),
+          };
+          
+          const geoJSONLayer = new GeoJSONLayer(properties);
+          
+          map.add(geoJSONLayer);
+        };
+
+        addGeoJSONLayer(url);
+      </script>
+      {% endif %}
+      <!--  -->
+
       <!-- content -->
       {{ content }}
       <!--  -->
 
+      <!-- footer -->
       <hr />
       <p>The City of Vernonia is an Equal Opportunity Employer and Provider</p>
       <p>Copyright © 2025 City of Vernonia, Oregon</p>
@@ -1561,6 +1615,7 @@
         </svg>
         <span>in Vernonia, Oregon</span>
       </p>
+      <!--  -->
     </article>
   </body>
 </html>
