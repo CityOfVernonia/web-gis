@@ -6,8 +6,27 @@
     "packages/*"
   ],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@arcgis/core": "^4.34.6",
+    "@arcgis/toolkit": "^4.34.7"
+  },
   "devDependencies": {
-    "lerna": "^9.0.0"
+    "@arcgis/eslint-config": "^4.34.7",
+    "@vitest/browser": "3.2.4",
+    "@vitest/eslint-plugin": "^1.4.0",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "lerna": "^9.0.0",
+    "luxon": "^3.7.2",
+    "fs-extra": "^11.3.2",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.46.2",
+    "typescript-strict-plugin": "^2.4.4",
+    "vite": "^7.1.12",
+    "vitest": "3.2.4"
   }
 }

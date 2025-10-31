@@ -8,8 +8,4 @@
  * If you need to provide additional typings, create a separate file.
  */
 /// <reference types="@arcgis/lumina/typings" />
-/// <reference types="@arcgis/core/interfaces" />
-/// <reference types="vitest/config" />
-/// <reference types="@vitest/browser/jest-dom.d.ts" />
-/// <reference types="@vitest/browser/providers/playwright" />
 /// <reference types="@esri/calcite-components/types/lumina" />
