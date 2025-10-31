@@ -12,11 +12,14 @@
   },
   "license": "MIT",
   "scripts": {
+    "surveys": "node ./scripts/surveys.js",
     "tax-maps": "node ./scripts/tax-maps.js"
   },
   "devDependencies": {
+    "@esri/arcgis-rest-feature-service": "^4.4.1",
     "chalk": "^5.6.2",
     "command-exists": "^1.2.9",
-    "download": "^8.0.0"
+    "download": "^8.0.0",
+    "image-to-pdf": "^3.0.2"
   }
 }

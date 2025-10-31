@@ -1,0 +1,61 @@
+{
+  "copyright": "Columbia County, Oregon and City of Vernonia, Oregon",
+  "popupEnabled": true,
+  "popupTemplate": {
+    "content": [
+      {
+        "fieldInfos": [
+          {
+            "fieldName": "Client",
+            "label": "Client"
+          },
+          {
+            "fieldName": "Firm",
+            "label": "Surveyor"
+          },
+          {
+            "fieldName": "SurveyDate",
+            "label": "Survey Date"
+          },
+          {
+            "fieldName": "FileDate",
+            "label": "File Date"
+          },
+          {
+            "fieldName": "Sheets",
+            "label": "No. Pages"
+          },
+          {
+            "fieldName": "Comments",
+            "label": "Comments"
+          },
+          {
+            "fieldName": "SurveyUrl",
+            "label": "Survey PDF"
+          }
+        ],
+        "type": "fields"
+      }
+    ],
+    "expressionInfos": [
+      {
+        "name": "survey-title",
+        "expression": "if ($feature.SurveyType == \"Subdivision\") { return $feature.Subdivision; } else { return $feature.SurveyId; }"
+      }
+    ],
+    "title": "{expression/survey-title}"
+  },
+  "renderer": {
+    "symbol": {
+      "color": [0, 0, 255, 0.0625],
+      "outline": {
+        "color": [0, 0, 255],
+        "width": 1
+      },
+      "type": "simple-fill"
+    },
+    "type": "simple"
+  },
+  "title": "Record Surveys",
+  "url": "https://geospatial-data.vernonia-or.gov/surveys/surveys.geojson"
+}

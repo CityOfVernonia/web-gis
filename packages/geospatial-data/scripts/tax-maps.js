@@ -1,9 +1,9 @@
 import chalk from 'chalk';
 import commandExists from 'command-exists';
 import download from 'download';
-import { exec, execFileSync } from 'node:child_process';
-import { promisify } from 'node:util';
+import { execFileSync } from 'node:child_process';
 import fs from 'fs-extra';
+import { execute } from './utils.js';
 
 const GHOST_SCRIPT_VERSION = '10.05.1';
 
@@ -50,8 +50,6 @@ const TAX_MAPS = [
   '5434CC',
   '5434CD',
 ];
-
-const execute = promisify(exec);
 
 /**
  * Check for GhostScript and run.
