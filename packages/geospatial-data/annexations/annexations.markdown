@@ -5,8 +5,6 @@ permalink: /annexations/
 preview: annexations.json
 ---
 
-### Annexations
-
 **GeoJSON:** [annexations.geojson](annexations.geojson)
 
 **GeoJSONLayer JSON:** [annexations.json](annexations.json)

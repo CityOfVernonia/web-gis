@@ -5,8 +5,6 @@ permalink: /surveys/
 preview: surveys.json
 ---
 
-### Surveys
-
 **GeoJSON:** [surveys.geojson](surveys.geojson)
 
 **GeoJSONLayer JSON:** [surveys.json](surveys.json)
