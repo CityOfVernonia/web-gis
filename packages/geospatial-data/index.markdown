@@ -2,6 +2,10 @@
 permalink: /
 ---
 
+### [Annexations](annexations)
+
+Annexations and de-annexations to the municipal boundary of Vernonia.
+
 ### [Surveys](surveys)
 
 Columbia County surveys, plats and other recorded survey documents within the Vernonia spatial extent.

@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "annexations": "node ./scripts/annexations.js",
     "surveys": "node ./scripts/surveys.js",
     "tax-maps": "node ./scripts/tax-maps.js"
   },

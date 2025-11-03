@@ -1,0 +1,61 @@
+{
+  "copyright": "Columbia County, Oregon and City of Vernonia, Oregon",
+  "labelingInfo": [
+    {
+      "labelExpressionInfo": {
+        "expression": "$feature.boundary_change"
+      },
+      "minScale": 20000,
+      "symbol": {
+        "color": [230, 81, 84],
+        "font": {
+          "size": 8
+        },
+        "haloColor": [255, 255, 255],
+        "haloSize": 1,
+        "type": "text"
+      }
+    }
+  ],
+  "outFields": ["*"],
+  "popupEnabled": true,
+  "popupTemplate": {
+    "content": [
+      {
+        "fieldInfos": [
+          {
+            "fieldName": "completed_date",
+            "label": "Date"
+          },
+          {
+            "fieldName": "dor_id",
+            "label": "DOR no."
+          },
+          {
+            "fieldName": "dor_approved",
+            "label": "DOR approved"
+          },
+          {
+            "fieldName": "pdf_url",
+            "label": "Documents"
+          }
+        ],
+        "type": "fields"
+      }
+    ],
+    "title": "Annexation {boundary_change}"
+  },
+  "renderer": {
+    "symbol": {
+      "color": [230, 81, 84, 0.125],
+      "outline": {
+        "color": [230, 81, 84],
+        "width": 1.5
+      },
+      "type": "simple-fill"
+    },
+    "type": "simple"
+  },
+  "title": "Annexations",
+  "url": "https://geospatial-data.vernonia-or.gov/annexations/annexations/annexations.geojson"
+}
