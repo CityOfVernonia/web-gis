@@ -1,0 +1,14 @@
+{
+  "name": "icons",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "City of Vernonia icons.",
+  "homepage": "https://github.com/CityOfVernonia/web-gis/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CityOfVernonia/web-gis.git",
+    "directory": "packages/icons"
+  },
+  "license": "MIT"
+}

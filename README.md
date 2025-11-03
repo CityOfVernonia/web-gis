@@ -14,6 +14,10 @@ City of Vernonia friends for the ArcGIS Maps SDK for JavaScript.
 
 City of Vernonia geospatial data.
 
+### [Icons](./packages/icons)
+
+City of Vernonia icons.
+
 ---
 
 Made with :heart: and :coffee: in Vernonia, Oregon
