@@ -1,0 +1,12 @@
+@use "sass:color";
+
+$cov-green: #6b9560;
+$cov-dark-green: #44693d;
+$cov-font-family: "Roboto", sans-serif;
+
+$light-brand: $cov-green;
+$light-brand-hover: color.scale($cov-green, $lightness: -15.612244898%);
+$light-brand-press: color.scale($cov-green, $lightness: -27.0612244898%);
+$light-brand-underline: rgba($light-brand-press, 0.4);
+
+// TODO: dark

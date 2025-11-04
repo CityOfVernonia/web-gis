@@ -1,5 +1,34 @@
+@use "vernonia" as vernonia;
+@use "bark" as bark;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 :root {
+  // global color test
   --cov-color-bolmeier: red;
   --cov-color-hawkins: green;
   --cov-color-spencer: blue;
+
+  // vernonia colors
+  --cov-green: #{vernonia.$cov-green};
+  --cov-dark-green: #{vernonia.$cov-dark-green};
+
+  // vernonia bark background
+  --cov-bark: #{url(#{bark.$cov-bark})};
+
+  // font family
+  --calcite-sans-family: #{vernonia.$cov-font-family};
+  --calcite-font-family: #{vernonia.$cov-font-family};
 }
+
+.calcite-mode-light,
+* .calcite-mode-light {
+  --calcite-color-brand: #{vernonia.$light-brand};
+  --calcite-color-brand-hover: #{vernonia.$light-brand-hover};
+  --calcite-color-brand-press: #{vernonia.$light-brand-press};
+  --calcite-color-brand-underline: #{vernonia.$light-brand-underline};
+  --calcite-color-text-link: #{vernonia.$light-brand-hover};
+  --calcite-color-focus: #{vernonia.$light-brand}; // is this necessary anymore? look for github issue
+}
+
+// TODO: dark

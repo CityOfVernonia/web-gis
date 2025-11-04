@@ -6,9 +6,18 @@ body {
   background-color: var(--calcite-color-background);
 }
 
+body {
+  min-height: 100vh;
+}
+
 header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.75rem 1.25rem;
   background-color: var(--calcite-color-brand);
+  background-image: var(--cov-bark);
   color: var(--calcite-color-text-inverse);
   font-size: var(--calcite-font-size-1);
   font-weight: var(--calcite-font-weight-medium);
@@ -30,4 +39,5 @@ section {
 .description {
   padding: 0.5rem;
   background-color: var(--calcite-color-foreground-1);
+  color: var(--calcite-color-text-1);
 }

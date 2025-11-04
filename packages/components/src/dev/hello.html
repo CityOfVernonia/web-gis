@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello | City of Vernonia Components</title>
     <link rel="stylesheet" href="./assets/main.css" />
+    <script type="module" src="./assets/theme.ts"></script>
     <script type="module" src="./hello.ts"></script>
     <style>
       .custom {
@@ -16,8 +17,15 @@
       }
     </style>
   </head>
-  <body>
-    <header>Hello - City of Vernonia Components</header>
+  <body class="calcite-mode-light">
+    <header>
+      <div>Hello - City of Vernonia Components</div>
+      <calcite-select>
+        <calcite-option value="root">Calcite Light (:root)</calcite-option>
+        <calcite-option selected value="light">Vernonia Light</calcite-option>
+        <calcite-option value="dark">Vernonia Dark</calcite-option>
+      </calcite-select>
+    </header>
     <section>
       <div class="description">Basic</div>
       <cov-hello></cov-hello>
@@ -34,9 +42,6 @@
       <cov-hello class="custom">
         <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
       </cov-hello>
-
-      <div class="description">Dark mode</div>
-      <cov-hello class="calcite-mode-dark"></cov-hello>
 
       <div class="description">Global CSS</div>
       <cov-hello class="global"></cov-hello>

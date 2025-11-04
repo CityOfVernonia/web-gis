@@ -4,6 +4,14 @@ import { defineConfig } from 'vite';
 import { useLumina } from '@arcgis/lumina-compiler';
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ['import'],
+      },
+    },
+  },
+
   plugins: [
     useLumina({
       build: {
@@ -11,7 +19,7 @@ export default defineConfig({
       },
       css: {
         globalStylesPath: 'src/styles/global/index.scss',
-        hydratedAttribute: 'cov-hydrated',
+        hydratedAttribute: 'hydrated',
       },
     }),
   ],
