@@ -8,6 +8,15 @@ export const cityTaxMapURL = (taxMap: string): string => {
 };
 
 /**
+ * Return a URL for a tax account's county assessor property information page.
+ * @param accountId tax account id, e.g. `22995`
+ * @returns A URL to property information page.
+ */
+export const countyAssessorURL = (accountId: string | number): string => {
+  return `https://propertysearch.columbiacountyor.gov/PSO/detail/${accountId}/R`;
+};
+
+/**
  * Return a URL for a tax map's PDF on the county's website.
  * @param taxMap tax map id, e.g. `4403BD`
  * @returns A URL to the tax map's PDF.

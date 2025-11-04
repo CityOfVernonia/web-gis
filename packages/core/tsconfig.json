@@ -14,7 +14,9 @@
     "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
+    "skipLibCheck": true,
     "types": ["@arcgis/core/interfaces.d.ts"]
   },
-  "include": ["src", "**/*.config.js", "**/*.config.ts"]
+  "include": ["src", "**/*.config.js", "**/*.config.ts"],
+  "exclude": ["**/*.spec.ts"]
 }
