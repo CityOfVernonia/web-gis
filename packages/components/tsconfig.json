@@ -8,7 +8,7 @@
         "name": "typescript-strict-plugin"
       }
     ],
-    "types": ["@arcgis/core/interfaces.d.ts", "@esri/calcite-components", "@arcgis/lumina"]
+    "types": ["@arcgis/core/interfaces.d.ts", "@arcgis/lumina", "@arcgis/map-components", "@esri/calcite-components"]
   },
   "include": ["src", "**/*.config.js", "**/*.config.ts"],
   "exclude": ["src/tests/**/*"],

@@ -18,6 +18,18 @@ City of Vernonia geospatial data.
 
 City of Vernonia icons.
 
+### About Packages
+
+All packages for this monorepo are in root `package.json`. The dependencies in `packages/components/package.json` are required for lumina compiler to do proper typings for dev and build. Be sure the versions are the same when updating dependencies.
+
+Running [npm-check-updates](https://github.com/raineorshine/npm-check-updates) is helpful:
+
+```shell
+ncu --deep -i
+```
+
+`typescript`, `vitest` and `@vitest/browser` packages should tract lumina/calcite-components versions or bad things will happen.
+
 ---
 
 Made with :heart: and :coffee: in Vernonia, Oregon

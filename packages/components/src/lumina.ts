@@ -9,7 +9,5 @@
  */
 /// <reference types="@arcgis/lumina/typings" />
 /// <reference types="@arcgis/core/interfaces" />
-/// <reference types="vitest/config" />
-/// <reference types="@vitest/browser/jest-dom.d.ts" />
-/// <reference types="@vitest/browser/providers/playwright" />
+/// <reference types="@arcgis/map-components/types/lumina" />
 /// <reference types="@esri/calcite-components/types/lumina" />

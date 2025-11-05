@@ -15,9 +15,5 @@
     "build": "rimraf dist && tsc",
     "lint": "eslint --fix",
     "test": "npm run lint && vitest run"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "tslib": "^2.8.1"
   }
 }
