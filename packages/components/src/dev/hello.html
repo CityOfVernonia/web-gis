@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello | City of Vernonia Components</title>
     <link rel="stylesheet" href="./assets/main.css" />
-    <script type="module" src="./assets/theme.ts"></script>
     <script type="module" src="./hello.ts"></script>
     <style>
       .custom {
@@ -17,14 +16,10 @@
       }
     </style>
   </head>
-  <body class="calcite-mode-light">
+  <body>
     <header>
       <div>Hello - City of Vernonia Components</div>
-      <calcite-select>
-        <calcite-option value="root">Calcite Light (:root)</calcite-option>
-        <calcite-option selected value="light">Vernonia Light</calcite-option>
-        <calcite-option value="dark">Vernonia Dark</calcite-option>
-      </calcite-select>
+      <cov-theme-select></cov-theme-select>
     </header>
     <section>
       <div class="description">Basic</div>

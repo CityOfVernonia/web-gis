@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City of Vernonia Components</title>
     <link rel="stylesheet" href="./src/dev/assets/main.css" />
-    <script type="module" src="./src/dev/assets/theme.ts"></script>
   </head>
-  <body class="calcite-mode-light">
+  <body>
     <header>
       <div>Hello - City of Vernonia Components</div>
-      <calcite-select>
-        <calcite-option value="root">Calcite Light (:root)</calcite-option>
-        <calcite-option selected value="light">Vernonia Light</calcite-option>
-        <calcite-option value="dark">Vernonia Dark</calcite-option>
-      </calcite-select>
+      <cov-theme-select></cov-theme-select>
     </header>
     <section>
       <calcite-notice class="home-notice" open>
@@ -29,6 +24,11 @@
         <calcite-link href="/src/dev/loading-root.html" slot="link">Calcite Light (:root)</calcite-link>
         <calcite-link href="/src/dev/loading-light.html" slot="link">Vernonia Light</calcite-link>
         <calcite-link href="/src/dev/loading-dark.html" slot="link">Vernonia Dark</calcite-link>
+      </calcite-notice>
+
+      <calcite-notice class="home-notice" open>
+        <div slot="title">Theme Select</div>
+        <div slot="message">Theme selector for development pages</div>
       </calcite-notice>
     </section>
   </body>
