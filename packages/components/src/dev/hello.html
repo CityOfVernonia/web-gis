@@ -17,29 +17,28 @@
     </style>
   </head>
   <body>
-    <header>
-      <div>Hello - City of Vernonia Components</div>
-      <cov-theme-select></cov-theme-select>
-    </header>
-    <section>
-      <div class="description">Basic</div>
-      <cov-hello></cov-hello>
+    <calcite-shell>
+      <cov-development-header name="Hello" slot="header"></cov-development-header>
+      <div class="content">
+        <div>Basic</div>
+        <cov-hello></cov-hello>
 
-      <div class="description">Name property set</div>
-      <cov-hello name="Ben"></cov-hello>
+        <div>Name property set</div>
+        <cov-hello name="Ben"></cov-hello>
 
-      <div class="description">Slotted content</div>
-      <cov-hello>
-        <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
-      </cov-hello>
+        <div>Slotted content</div>
+        <cov-hello>
+          <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
+        </cov-hello>
 
-      <div class="description">Custom CSS properties</div>
-      <cov-hello class="custom">
-        <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
-      </cov-hello>
+        <div>Custom CSS properties</div>
+        <cov-hello class="custom">
+          <div slot="tag-line">The smell of fir wood burning in a thousand stoves fills the air</div>
+        </cov-hello>
 
-      <div class="description">Global CSS</div>
-      <cov-hello class="global"></cov-hello>
-    </section>
+        <div>Global CSS</div>
+        <cov-hello class="global"></cov-hello>
+      </div>
+    </calcite-shell>
   </body>
 </html>

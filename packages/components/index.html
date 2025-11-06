@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="./src/dev/assets/main.css" />
   </head>
   <body>
-    <header>
-      <div>Hello - City of Vernonia Components</div>
-      <cov-theme-select></cov-theme-select>
-    </header>
-    <section>
-      <calcite-notice class="home-notice" open>
-        <div slot="title">Hello</div>
-        <div slot="message">A simple getting started component and template for new components</div>
-        <calcite-link href="/src/dev/hello.html" slot="link">Check it out</calcite-link>
-      </calcite-notice>
+    <calcite-shell>
+      <cov-development-header slot="header"></cov-development-header>
+      <div class="content">
+        <calcite-notice open>
+          <div slot="title">Hello</div>
+          <div slot="message">A simple getting started component and template for new components</div>
+          <calcite-link href="/src/dev/hello.html" slot="link">Check it out</calcite-link>
+        </calcite-notice>
 
-      <calcite-notice class="home-notice" open>
-        <div slot="title">Loading</div>
-        <div slot="message">Application loading screen</div>
-        <calcite-link href="/src/dev/loading-root.html" slot="link">Calcite Light (:root)</calcite-link>
-        <calcite-link href="/src/dev/loading-light.html" slot="link">Vernonia Light</calcite-link>
-        <calcite-link href="/src/dev/loading-dark.html" slot="link">Vernonia Dark</calcite-link>
-      </calcite-notice>
+        <calcite-notice open>
+          <div slot="title">Loading</div>
+          <div slot="message">Application loading screen</div>
+          <calcite-link href="/src/dev/loading-root.html" slot="link">Calcite Light (:root)</calcite-link>
+          <calcite-link href="/src/dev/loading-light.html" slot="link">Vernonia Light</calcite-link>
+          <calcite-link href="/src/dev/loading-dark.html" slot="link">Vernonia Dark</calcite-link>
+        </calcite-notice>
 
-      <calcite-notice class="home-notice" open>
-        <div slot="title">Theme Select</div>
-        <div slot="message">Theme selector for development pages</div>
-      </calcite-notice>
-    </section>
+        <calcite-notice open>
+          <div slot="title">Map Control 2D </div>
+          <div slot="message">Map component with controls for zooming, location, fullscreen, etc</div>
+          <calcite-link href="/src/dev/map-control-2d.html" slot="link">Check it out</calcite-link>
+        </calcite-notice>
+      </div>
+    </calcite-shell>
   </body>
 </html>

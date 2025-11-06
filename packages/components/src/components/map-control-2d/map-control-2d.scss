@@ -1,0 +1,18 @@
+:host {
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.action-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  // TODO: go shadowless for map components - arcgis map is not adding shadow - is view.ui still doing so?
+  // calcite-action-bar {
+  //   box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  // }
+}
